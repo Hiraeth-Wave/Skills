@@ -11,6 +11,7 @@
                 "./ponytail-help",
                 "./ponytail-review",
                 "./ponytail-audit",
+                "./ponytail-gain",
                 "./ponytail-debt"
             ]
         }
