@@ -1,7 +1,7 @@
 ![Skills](https://socialify.git.ci/Hiraeth-Wave/Skills/image?font=KoHo&name=1&owner=1&pattern=Solid&theme=Auto)
 
 Hiraeth 个人自用的部分 Skills。\
-该仓库提供的是**特别针对 TraeCode CN 适配**的 Skill，某些纯 Skill（指不需要 Hooks 的）不需要特别适配，因此并不是全部，如果你对我使用的全部 Skill 感兴趣可以翻阅[我的 Star 清单](https://github.com/stars/Hiraeth-Wave/lists/ai-%E5%A4%A7%E6%A8%A1%E5%9E%8B-%E6%99%BA%E8%83%BD%E4%BD%93)。
+该仓库放的是**特别针对 TraeCode CN 适配**的 Skill，没有放不需要特别适配的纯 Skill（指不需要 Hooks 的），如果你对我使用的全部 Skill 感兴趣可以翻阅[我的 Star 清单](https://github.com/stars/Hiraeth-Wave/lists/ai-%E5%A4%A7%E6%A8%A1%E5%9E%8B-%E6%99%BA%E8%83%BD%E4%BD%93)。
 
 ## 仓库 Skill 列表
 
