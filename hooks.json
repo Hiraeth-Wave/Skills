@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$env:USERPROFILE\\.trae-cn\\skills\\ponytail\\hooks\\ponytail-activate.js\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$env:USERPROFILE\\.trae-cn\\skills\\ponytail\\hooks\\ponytail-mode-tracker.js\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

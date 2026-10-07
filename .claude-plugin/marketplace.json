@@ -1,0 +1,18 @@
+{
+    "metadata": {
+        "pluginRoot": "./skills"
+    },
+    "plugins": [
+        {
+            "name": "ponytail",
+            "source": "./ponytail",
+            "skills": [
+                "./ponytail",
+                "./ponytail-help",
+                "./ponytail-review",
+                "./ponytail-audit",
+                "./ponytail-debt"
+            ]
+        }
+    ]
+}
