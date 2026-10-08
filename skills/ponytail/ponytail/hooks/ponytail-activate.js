@@ -11,6 +11,7 @@
 // Claude-specific extras from the upstream hook (statusline detection nudge,
 // Cursor always-on-rule handshake) are dropped: TraeCode has no statusLine
 // setting and no rule file the hooks would need to yield to.
+// The v5 codebase map (ponytail-map.js) is kept: it is host-agnostic.
 
 const { getDefaultMode } = require('./ponytail-config');
 const { getPonytailInstructions } = require('./ponytail-instructions');
@@ -32,7 +33,16 @@ try {
 }
 
 // 2. Emit the ponytail ruleset, filtered to the active intensity level.
-const output = getPonytailInstructions(mode);
+let output = getPonytailInstructions(mode);
+
+// 2b. Codebase map: what already exists, so "reuse first" costs no search. Fail open: a map
+// that cannot be built must never block or slow the session start. Root preference mirrors
+// ponytail-runtime.js: Trae hands the workspace over as TRAE_PROJECT_DIR.
+if (process.env.PONYTAIL_MAP !== '0') try {
+  const root = (process.env.TRAE_PROJECT_DIR || process.env.CLAUDE_PROJECT_DIR || '').trim() || process.cwd();
+  const map = require('./ponytail-map').buildMap(root);
+  if (map) output += '\n\n' + map;
+} catch (e) { /* no map */ }
 
 try {
   writeHookOutput('SessionStart', output);
