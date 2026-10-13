@@ -59,10 +59,16 @@ function readMode() {
   }
 }
 
+// Synchronous: every hook calls process.exit() right after this, and on macOS a pipe
+// write is async, so a pending write died with the process (upstream #1043).
+function writeOut(text) {
+  fs.writeSync(1, text);
+}
+
 function writeHookOutput(event, context = '') {
   // Empty context → empty JSON object: Trae treats it as "nothing to say",
   // same contract Cursor uses for structured output.
-  process.stdout.write(JSON.stringify(
+  writeOut(JSON.stringify(
     context
       ? { hookSpecificOutput: { hookEventName: event, additionalContext: context } }
       : {}
