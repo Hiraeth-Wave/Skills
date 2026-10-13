@@ -29,8 +29,7 @@ pnx skills add Hiraeth-Wave/Skills -g -a 'trae-cn'
 Skill 本体更新可用 CLI 直接升级：
 
 ```bash
-cd ~/.trae-cn/
-pnx skills update
+pnx skills update -g
 ```
 
 Hooks 更新直接复制粘贴覆盖掉旧的即可。
