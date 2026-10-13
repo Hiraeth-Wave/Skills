@@ -11,6 +11,9 @@ Hiraeth 个人自用的部分 Skills。\
 
 ## 安装
 
+> [!Note]
+> 需要已安装 Node.js，且仅对 Node 26 及以上 LTS 版本保证可用性。
+
 首先通过 Skills CLI 快速安装 Skill 本体：
 
 ```bash
