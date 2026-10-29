@@ -7,7 +7,7 @@
           {
             "type": "command",
             "command": "node \"$env:USERPROFILE\\.trae-cn\\skills\\ponytail\\hooks\\ponytail-activate.js\"",
-            "timeout": 10
+            "timeout": 15
           }
         ]
       }
@@ -18,7 +18,7 @@
           {
             "type": "command",
             "command": "node \"$env:USERPROFILE\\.trae-cn\\skills\\ponytail\\hooks\\ponytail-mode-tracker.js\"",
-            "timeout": 10
+            "timeout": 15
           }
         ]
       }
