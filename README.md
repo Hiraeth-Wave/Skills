@@ -8,7 +8,7 @@ Hiraeth 个人自用的部分 Skills。\
 仓库 Skill 是针对我自己的 TraeCode 特化的，因此其与原始仓库的内容可能存在不同。
 
 - [Ponytail](https://github.com/DietrichGebert/ponytail)：让你的 Agent 找到最简洁的实现路径。
-- [WinUI Design Guidelines](./skills/winui-design-guidelines/winui-design-guidelines/SKILL.md)：WinUI Gallery Design 章节的文字版，涵盖 Color、Geometry、Iconography、Spacing、Typography。
+- WinUI Design Guidelines：WinUI Gallery Design 章节的文字版，涵盖 Color、Geometry、Iconography、Spacing、Typography。
 
 ## 安装
 
